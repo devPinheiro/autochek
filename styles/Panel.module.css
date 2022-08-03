@@ -1,0 +1,17 @@
+.panel{
+    background-color: rgba(249, 249, 249, 0.919);
+    padding: 10px 8px;
+}
+.panel li{
+    font-size: 1.5rem;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.description {
+  /* margin: 4rem 0; */
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 10px 0px;
+}

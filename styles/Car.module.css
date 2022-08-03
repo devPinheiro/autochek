@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+   padding: 4rem 2rem;
+}
+
+.main {
+  width: 60%;
+  padding: 4rem 2rem;
+  /* margin-right: 40px; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.carDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 25px rgb(0 0 0 / 6%);
+  margin-bottom: 40px;
+}
+
+.carDetailsContainer section {
+    padding: 10px 20px;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.imageContainer img{
+  object-fit: contain;
+  width: 100%
+}
+
+
+.description {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.description svg{
+   margin: 0 5px 0 0;
+}
+
+.description span{
+   margin: 0 10px 0 0;
+}
+
+.sectionTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 0.4px solid rgba(222, 222, 222, 0.631);
+}
+
+.descriptionItem {
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.descriptionItem span{
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.descriptionItem:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+.inspected {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+
+.placeholderCircle {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(49, 53, 91);
+    border: 2px solid rgb(49, 53, 91);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.inspectedMakes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    /* height: 60px; */
+    padding: 10px;
+}
+.inspectedMakesItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding: 0px 20px 0 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+   display: flex;
+    flex-direction: column;
+  }
+  .aside {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .main{
+    width: 100%;
+     padding: 1rem 2rem;
+  }
+  .description {
+
+    font-size: 0.8rem;}
+}
